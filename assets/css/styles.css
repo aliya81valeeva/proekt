@@ -27,7 +27,8 @@ button {
 }
 
 .wrap {
-    width: 1040px;
+    width: 100%;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
@@ -809,4 +810,28 @@ h4 {
     width: 300px;
     max-height: 300px;
     object-fit: contain;
+}
+@media (max-width: 768px) {
+    .wrap { padding: 0 15px; }
+    .header { flex-direction: column; height: auto; padding: 15px 0; }
+    .nav { flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+    .hero { height: auto; flex-direction: column; padding-top: 20px; }
+    .hero-copy { width: 100%; text-align: center; }
+    .hero p { width: 100%; margin: 10px auto; }
+    .hero-players { position: static; width: 100%; height: 300px; }
+    .hero-back { left: 10%; top: 20px; height: 250px; }
+    .hero-front { left: 40%; top: 0; height: 280px; }
+    .store { width: 100%; padding: 10px; }
+    .store-body { flex-direction: column; }
+    .store-preview, .product-column, .description-column { width: 100%; margin-bottom: 15px; }
+    .description-column .orange { width: 100%; margin: 0; }
+    .news-grid, .rewards-grid { grid-template-columns: 1fr; }
+    .guide-layout { flex-direction: column; }
+    .guide-steps { width: 100%; }
+    .guide-player { display: none; }
+    .article-page { width: 100%; padding: 20px 15px; }
+    .article-cover, .article-body, .article-body img { width: 100%; }
+    .news-wide { flex-direction: column; }
+    .news-wide img { width: 100%; }
+    .rules-intro, .rules-list, .bottom-help { width: 100%; }
 }
